@@ -12,7 +12,13 @@ function errorHandler(err, req, res, next) {
   });
 }
 
+const timeSign = function (req, res, next) {
+  res.setHeader("Accepted-at", new Date().toISOString());
+  next();
+};
+
 module.exports = {
   notFound,
   errorHandler,
+  timeSign,
 };
