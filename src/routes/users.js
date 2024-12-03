@@ -1,13 +1,11 @@
-/* eslint-disable consistent-return */
-const express = require("express");
-const schema = require("../db/schema");
-const db = require("../db/connection");
+const express = require('express');
+const db = require('../db/connection');
 
-const users = db.get("users");
+const users = db.get('users');
 
 const router = express.Router();
 
-router.get("/", async (req, res, next) => {
+router.get('/', async (req, res, next) => {
   try {
     const allUsers = await users.find({});
     res.json(allUsers);

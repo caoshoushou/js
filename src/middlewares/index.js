@@ -4,7 +4,7 @@ function notFound(req, res, next) {
   next(error);
 }
 
-function errorHandler(err, req, res, next) {
+function errorHandler(err, req, res) {
   res.status(res.statusCode || 500);
   res.json({
     message: err.message,
@@ -13,7 +13,7 @@ function errorHandler(err, req, res, next) {
 }
 
 const timeSign = function (req, res, next) {
-  res.setHeader("Accepted-at", new Date().toISOString());
+  res.setHeader('Accepted-at', new Date().toISOString());
   next();
 };
 
