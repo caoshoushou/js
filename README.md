@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # express api
 
 A simple REST API in Node.js
@@ -53,3 +54,7 @@ npm run prod
 For more details check [Build a Restful CRUD API with Node.js](https://dev.to/zagaris/build-a-restful-crud-api-with-node-js-2334).
 
 
+=======
+git add README.md
+text
+>>>>>>> e6873d8473516802a5e11fd8d54ede6ce03a9b78
